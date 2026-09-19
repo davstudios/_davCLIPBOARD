@@ -1,0 +1,9 @@
+_davCLIPBOARD v1.0.0 — Test report
+
+Node test suite: 28/28 PASS
+JavaScript syntax: PASS
+JSON validation: PASS
+Release workflow presence/contract: PASS
+Tauri icon set: present
+
+Note: native Rust/Tauri compilation was not executed in the packaging environment because Cargo is not installed. npm dependency installation also could not complete within the available network timeout; plugin APIs were checked against the current official Tauri 2 documentation.

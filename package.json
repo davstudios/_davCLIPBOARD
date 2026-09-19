@@ -1,0 +1,27 @@
+{
+  "name": "davclipboard-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "_davCLIPBOARD — local clipboard history manager for Windows, macOS and Linux.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js",
+    "tauri": "tauri",
+    "desktop": "tauri dev",
+    "bundle": "tauri build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "@tauri-apps/plugin-clipboard-manager": "2",
+    "@tauri-apps/plugin-opener": "2",
+    "@tauri-apps/plugin-global-shortcut": "2",
+    "@tauri-apps/plugin-autostart": "2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "vite": "8.2.2"
+  }
+}
