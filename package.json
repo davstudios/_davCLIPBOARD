@@ -1,6 +1,6 @@
 {
   "name": "davclipboard-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "description": "_davCLIPBOARD — local clipboard history manager for Windows, macOS and Linux.",

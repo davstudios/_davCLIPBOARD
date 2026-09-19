@@ -1,9 +1,19 @@
-_davCLIPBOARD v1.0.0 — Test report
+_davCLIPBOARD v1.1.0 — Test report
+Date: 2026-09-19
 
-Node test suite: 28/28 PASS
-JavaScript syntax: PASS
-JSON validation: PASS
-Release workflow presence/contract: PASS
-Tauri icon set: present
+Automated tests: 29/29 passed
+- Clipboard engine: passed
+- Project/release contract: passed
+- Version synchronization: passed
+- Source checks: passed
+- RGBA icon contract: passed
 
-Note: native Rust/Tauri compilation was not executed in the packaging environment because Cargo is not installed. npm dependency installation also could not complete within the available network timeout; plugin APIs were checked against the current official Tauri 2 documentation.
+Bundle icon verification:
+- 32x32.png: RGBA
+- 128x128.png: RGBA
+- 128x128@2x.png: RGBA
+- app-icon.png: RGBA
+- icon.icns: regenerated from RGBA master
+- icon.ico: unchanged from v1.0.0
+
+The native Tauri/Rust bundle was not compiled in this environment because Cargo is not installed. The reported macOS/Linux failure is addressed at its source: every PNG referenced by Tauri is now truecolor RGBA.

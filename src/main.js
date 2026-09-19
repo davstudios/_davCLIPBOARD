@@ -32,7 +32,7 @@ const isTauri='__TAURI_INTERNALS__' in window;
 const stored=JSON.parse(localStorage.getItem('davclipboard-settings')||'{}');
 const state={
   page:'history',
-  version:'1.0.0',
+  version:'1.1.0',
   entries:[],
   query:'',
   monitoring:stored.monitoring!==false,

@@ -7,7 +7,7 @@
 Gestore locale della cronologia appunti per Windows, macOS e Linux.  
 Local clipboard history manager for Windows, macOS and Linux.
 
-**v1.0.0 · Stable · Local-first · No telemetry**
+**v1.1.0 · Stable · Local-first · No telemetry**
 
 Interfaccia e motion system condivisi con `_davSPACE` e la suite `_davstudios`.
 
@@ -15,7 +15,7 @@ Interfaccia e motion system condivisi con `_davSPACE` e la suite `_davstudios`.
 
 `_davCLIPBOARD` monitora il testo copiato, conserva una cronologia locale ricercabile e permette di richiamarla rapidamente da tastiera.
 
-### Funzioni v1.0.0
+### Funzioni v1.1.0
 
 - Monitoraggio automatico degli appunti di testo.
 - Cronologia persistente salvata localmente nei dati dell'app.
@@ -31,7 +31,7 @@ Interfaccia e motion system condivisi con `_davSPACE` e la suite `_davstudios`.
 - Nessuna telemetria e nessun invio online degli appunti.
 - Design, testi, colori, icone e animazioni coerenti con il design system `_davstudios`.
 
-Supporto immagini/file e system tray sono intenzionalmente lasciati a una revisione successiva per mantenere stabile la prima release.
+Supporto immagini/file e system tray restano candidati per revisioni successive.
 
 ### Avvio su Windows
 
@@ -48,7 +48,7 @@ npm run desktop
 
 `_davCLIPBOARD` monitors copied text, keeps a searchable local history and can be recalled quickly from the keyboard.
 
-### v1.0.0 features
+### v1.1.0 features
 
 - Automatic text clipboard monitoring.
 - Persistent local history stored in app data.

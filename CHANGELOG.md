@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0
+
+Aggiornamento di compatibilità multipiattaforma per la release stabile.
+
+- Rigenerate tutte le icone PNG Tauri come immagini truecolor RGBA a 32 bit.
+- Corretto l'errore di compilazione `icon .../32x32.png is not RGBA` su macOS e Linux.
+- Rigenerato `icon.icns` dalla stessa sorgente RGBA mantenendo invariato `icon.ico`.
+- Aggiunto un test di contratto che verifica che tutte le PNG di bundle siano effettivamente RGBA.
+- Versione tecnica sincronizzata a 1.1.0.
+
 ## 1.0.0
 
 Prima release stabile di `_davCLIPBOARD`.

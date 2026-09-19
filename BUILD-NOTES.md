@@ -1,4 +1,4 @@
-# Build notes — _davCLIPBOARD v1.0.0
+# Build notes — _davCLIPBOARD v1.1.0
 
 ## Requisiti
 
@@ -26,4 +26,8 @@ npm run desktop
 npm run bundle
 ```
 
-La v1.0.0 usa i plugin Tauri ufficiali clipboard-manager, opener, global-shortcut e autostart. Le icone Tauri derivano tutte dall'icona definitiva di `_davCLIPBOARD`; `icon.ico` resta byte-per-byte identico al file sorgente fornito.
+La v1.1.0 usa i plugin Tauri ufficiali clipboard-manager, opener, global-shortcut e autostart. Le icone Tauri derivano tutte dall'icona definitiva di `_davCLIPBOARD`; `icon.ico` resta byte-per-byte identico al file sorgente fornito.
+
+## Icone bundle
+
+Tutte le PNG in `src-tauri/icons/` sono truecolor RGBA. `icon.ico` resta invariato rispetto alla release precedente.

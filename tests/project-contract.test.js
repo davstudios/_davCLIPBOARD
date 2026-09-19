@@ -13,7 +13,7 @@ const capability=fs.readFileSync('src-tauri/capabilities/default.json','utf8');
 test('Windows launcher always refreshes dependencies before desktop start',()=>{const install=launcher.search(/npm install --no-audit --no-fund/i);const desktop=launcher.search(/npm run desktop/i);assert.ok(install>=0);assert.ok(desktop>install);assert.doesNotMatch(launcher,/if not exist [^\n]*node_modules/i);});
 test('Vite development configuration preserves Tauri isolation',()=>{assert.match(vite,/const host = process\.env\.TAURI_DEV_HOST/);assert.match(vite,/src-tauri/);assert.match(vite,/strictPort:true/);});
 test('frontend and Tauri dependency versions match the proven base',()=>{assert.equal(packageJson.dependencies['@tauri-apps/api'],'2.11.1');assert.equal(packageJson.devDependencies['@tauri-apps/cli'],'2.11.4');assert.equal(packageJson.devDependencies.vite,'8.2.2');});
-test('stable metadata and required files are coherent',()=>{const rustVersion=cargo.match(/^version\s*=\s*"([^"]+)"/m)?.[1];assert.equal(packageJson.version,'1.0.0');assert.equal(tauri.version,packageJson.version);assert.equal(rustVersion,packageJson.version);for(const path of ['README.md','CHANGELOG.md','src-tauri/icons/icon.ico'])assert.equal(fs.existsSync(path),true);});
+test('stable metadata and required files are coherent',()=>{const rustVersion=cargo.match(/^version\s*=\s*"([^"]+)"/m)?.[1];assert.equal(packageJson.version,'1.1.0');assert.equal(tauri.version,packageJson.version);assert.equal(rustVersion,packageJson.version);for(const path of ['README.md','CHANGELOG.md','src-tauri/icons/icon.ico'])assert.equal(fs.existsSync(path),true);});
 test('clipboard persistence is local file storage',()=>{assert.match(rust,/app_data_dir/);assert.match(rust,/clipboard-history\.json/);assert.match(rust,/fs::write/);});
 test('clipboard permissions are limited to text read and write',()=>{assert.match(capability,/clipboard-manager:allow-read-text/);assert.match(capability,/clipboard-manager:allow-write-text/);});
 
@@ -47,3 +47,13 @@ test('suite motion contract follows _davSPACE behavior',()=>{
 test('stable desktop helpers are configured',()=>{const source=fs.readFileSync('src/main.js','utf8');assert.equal(packageJson.dependencies['@tauri-apps/plugin-global-shortcut'],'2');assert.equal(packageJson.dependencies['@tauri-apps/plugin-autostart'],'2');assert.match(cargo,/tauri-plugin-global-shortcut = "2"/);assert.match(cargo,/tauri-plugin-autostart = "2"/);assert.match(capability,/global-shortcut:allow-register/);assert.match(capability,/autostart:allow-enable/);assert.match(source,/CommandOrControl\+Shift\+V/);assert.match(source,/pruneExpiredEntries/);});
 
 test('stable release workflow is included',()=>{const workflow=fs.readFileSync('.github/workflows/release.yml','utf8');assert.match(workflow,/tags:/);assert.match(workflow,/prerelease: false/);assert.ok(workflow.includes("tagName: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}"));});
+
+test('bundle PNG icons are truecolor RGBA for Tauri on macOS and Linux',()=>{
+  for(const path of ['src-tauri/icons/32x32.png','src-tauri/icons/128x128.png','src-tauri/icons/128x128@2x.png','src-tauri/icons/app-icon.png']){
+    const png=fs.readFileSync(path);
+    const signature=png.subarray(0,8).toString('hex');
+    assert.equal(signature,'89504e470d0a1a0a',`${path} must be a PNG`);
+    assert.equal(png.subarray(12,16).toString('ascii'),'IHDR',`${path} must start with IHDR`);
+    assert.equal(png[25],6,`${path} must use PNG color type 6 (RGBA)`);
+  }
+});
