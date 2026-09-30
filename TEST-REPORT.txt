@@ -1,9 +1,10 @@
-_davCLIPBOARD v26.9.1 — Test report
+_davCLIPBOARD v26.9.2 — Test report
 Date: 2026-09-30
 
 Automated tests: 32/32 passed
 - Clipboard engine: passed
 - Project/release contract: passed
+- GitHub Release description automation contract: passed
 - _davstudios package metadata contract: passed
 - Version synchronization: passed
 - Source checks: passed
@@ -21,8 +22,8 @@ Static validation:
 - .github/workflows/release.yml: valid YAML
 
 Bundle metadata:
-- Version: 26.9.1
-- Public tag: v26.9.1
+- Version: 26.9.2
+- Public tag: v26.9.2
 - Publisher: _davstudios
 - Homepage: https://davstudios.it
 - License: MIT

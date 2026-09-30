@@ -1,5 +1,16 @@
 # Changelog
 
+## 26.9.2
+
+Automazione della descrizione delle GitHub Release secondo il nuovo standard bilingue `_davstudios`.
+
+- Versione sincronizzata a `26.9.2` in npm, Tauri, Cargo, lockfile, launcher e interfaccia.
+- Il workflow GitHub Actions usa ora automaticamente il corpo del commit associato al tag come descrizione della Release.
+- La Description inserita in GitHub Desktop viene quindi riutilizzata senza duplicazioni nella pagina GitHub Release.
+- Aggiunta una verifica che richiede entrambe le sezioni `🇮🇹` e `🇺🇸` prima di pubblicare la Release.
+- Rimossa la vecchia descrizione statica generica della Release.
+- Nessuna modifica alla logica della clipboard, all'interfaccia o alle funzionalità dell'app.
+
 ## 26.9.1
 
 Standardizzazione della release `_davstudios` e adozione del nuovo schema di versioning `YY.M.REVISIONE`.

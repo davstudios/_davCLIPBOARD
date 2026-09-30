@@ -10,7 +10,7 @@ const vite=fs.readFileSync('vite.config.js','utf8');
 const rustVersion=cargo.match(/^version\s*=\s*"([^"]+)"/m)?.[1];
 
 test('versioni tecniche sincronizzate',()=>{
-  assert.equal(packageJson.version,'26.9.1');
+  assert.equal(packageJson.version,'26.9.2');
   assert.equal(tauri.version,packageJson.version);
   assert.equal(rustVersion,packageJson.version);
 });
