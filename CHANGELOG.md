@@ -1,5 +1,18 @@
 # Changelog
 
+## 26.9.1
+
+Standardizzazione della release `_davstudios` e adozione del nuovo schema di versioning `YY.M.REVISIONE`.
+
+- Versione sincronizzata a `26.9.1` in npm, Tauri, Cargo, lockfile, launcher e interfaccia.
+- Aggiunti publisher `_davstudios`, homepage ufficiale, copyright, licenza MIT e file di licenza nei metadata del bundle.
+- Aggiunti i metadata Debian per la distribuzione Linux.
+- Mantenuto invariato l'identifier storico `studio.dav.clipboard` per preservare l'identità dell'app.
+- Aggiornato il README con istruzioni per installare release non firmate su Windows, macOS e Linux.
+- Rafforzato il workflow Linux contro repository Microsoft non raggiungibili sui runner Ubuntu.
+- Aggiornata la documentazione di build, supporto multipiattaforma e release.
+- Nessuna modifica al comportamento della cronologia appunti o alle funzioni dell'app.
+
 ## 1.1.0
 
 Aggiornamento di compatibilità multipiattaforma per la release stabile.

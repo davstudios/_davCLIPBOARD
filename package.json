@@ -1,9 +1,9 @@
 {
   "name": "davclipboard-app",
-  "version": "1.1.0",
+  "version": "26.9.1",
   "private": true,
   "type": "module",
-  "description": "_davCLIPBOARD — local clipboard history manager for Windows, macOS and Linux.",
+  "description": "_davCLIPBOARD — local clipboard history manager for Windows, macOS and Linux by _davstudios.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -23,5 +23,8 @@
   "devDependencies": {
     "@tauri-apps/cli": "2.11.4",
     "vite": "8.2.2"
-  }
+  },
+  "author": "_davstudios",
+  "license": "MIT",
+  "homepage": "https://davstudios.it"
 }

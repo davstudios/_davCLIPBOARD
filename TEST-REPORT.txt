@@ -1,19 +1,41 @@
-_davCLIPBOARD v1.1.0 — Test report
-Date: 2026-09-19
+_davCLIPBOARD v26.9.1 — Test report
+Date: 2026-09-30
 
-Automated tests: 29/29 passed
+Automated tests: 32/32 passed
 - Clipboard engine: passed
 - Project/release contract: passed
+- _davstudios package metadata contract: passed
 - Version synchronization: passed
 - Source checks: passed
 - RGBA icon contract: passed
 
-Bundle icon verification:
-- 32x32.png: RGBA
-- 128x128.png: RGBA
-- 128x128@2x.png: RGBA
-- app-icon.png: RGBA
-- icon.icns: regenerated from RGBA master
-- icon.ico: unchanged from v1.0.0
+Static validation:
+- src/main.js: syntax valid
+- src/clipboard-engine.js: syntax valid
+- src/helpers.js: syntax valid
+- vite.config.js: syntax valid
+- package.json: valid JSON
+- package-lock.json: valid JSON
+- src-tauri/tauri.conf.json: valid JSON
+- src-tauri/capabilities/default.json: valid JSON
+- .github/workflows/release.yml: valid YAML
 
-The native Tauri/Rust bundle was not compiled in this environment because Cargo is not installed. The reported macOS/Linux failure is addressed at its source: every PNG referenced by Tauri is now truecolor RGBA.
+Bundle metadata:
+- Version: 26.9.1
+- Public tag: v26.9.1
+- Publisher: _davstudios
+- Homepage: https://davstudios.it
+- License: MIT
+- Copyright: © 2026 _davstudios
+- Identifier preserved: studio.dav.clipboard
+- Linux DEB section: utils
+- Linux DEB priority: optional
+
+Code signing:
+- No trusted commercial Windows code-signing certificate configured.
+- No Apple Developer ID/notarization configured.
+- README includes SmartScreen, Gatekeeper and Linux AppImage instructions.
+
+Native build:
+- The native Tauri/Rust bundle was not compiled in this environment because Cargo is not installed.
+- GitHub Actions remains responsible for native Windows, macOS and Linux release builds.
