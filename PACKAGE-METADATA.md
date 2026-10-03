@@ -1,8 +1,8 @@
 # _davCLIPBOARD — Package metadata
 
 - Product name: `_davCLIPBOARD`
-- Version: `26.9.2`
-- Public release tag: `v26.9.2`
+- Version: `26.10.1`
+- Public release tag: `v26.10.1`
 - Developer / Publisher: `_davstudios`
 - Identifier: `studio.dav.clipboard`
 - Homepage / Support: `https://davstudios.it`
@@ -16,3 +16,5 @@
 - Code signing: no commercial Windows certificate; no Apple Developer ID/notarization in this release
 
 L'identifier storico è preservato per mantenere la continuità dell'identità applicativa tra le release.
+
+- Repository normalization: complete for v26.10.1; tracked text and icon assets are refreshed without changing application behavior.

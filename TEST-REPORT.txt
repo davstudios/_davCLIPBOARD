@@ -1,4 +1,4 @@
-_davCLIPBOARD v26.9.2 — Test report
+_davCLIPBOARD v26.10.1 — Test report
 Date: 2026-09-30
 
 Automated tests: 32/32 passed
@@ -22,8 +22,8 @@ Static validation:
 - .github/workflows/release.yml: valid YAML
 
 Bundle metadata:
-- Version: 26.9.2
-- Public tag: v26.9.2
+- Version: 26.10.1
+- Public tag: v26.10.1
 - Publisher: _davstudios
 - Homepage: https://davstudios.it
 - License: MIT

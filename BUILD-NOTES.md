@@ -1,4 +1,4 @@
-# Build notes — _davCLIPBOARD v26.9.2
+# Build notes — _davCLIPBOARD v26.10.1
 
 ## Requisiti
 
@@ -26,7 +26,7 @@ npm run desktop
 npm run bundle
 ```
 
-La v26.9.2 usa i plugin Tauri ufficiali clipboard-manager, opener, global-shortcut e autostart. Il funzionamento applicativo resta invariato rispetto alla release precedente. Questa revisione aggiorna il workflow GitHub affinché la Description bilingue del commit venga riutilizzata automaticamente come descrizione della GitHub Release.
+La v26.10.1 mantiene i plugin Tauri ufficiali clipboard-manager, opener, global-shortcut e autostart e adotta la repository normalization completa della suite _davstudios. Il funzionamento applicativo resta invariato rispetto alla release precedente; versioni tecniche, lockfile, workflow e controlli multipiattaforma sono sincronizzati al nuovo schema YY.M.REVISIONE.
 
 ## Metadata bundle
 

@@ -17,3 +17,4 @@ test('statsForEntries counts total pinned and today',()=>{const now=new Date(202
 test('formatRelativeTime formats recent values',()=>assert.equal(formatRelativeTime(95000,100000,'it'),'adesso'));
 
 test('pruneExpiredEntries preserves favorites and removes old unpinned clips',()=>{const now=10*86400000;const entries=[{id:'old',createdAt:0,pinned:false},{id:'favorite',createdAt:0,pinned:true},{id:'new',createdAt:now-86400000,pinned:false}];assert.deepEqual(pruneExpiredEntries(entries,7,now).map((entry)=>entry.id),['favorite','new']);});
+

@@ -1,5 +1,12 @@
 # Changelog
 
+## 26.10.1
+- Adottato il versioning `_davstudios` `YY.M.REVISIONE` per la release corrente.
+- Sincronizzate tutte le versioni tecniche in npm, package-lock, Tauri, Cargo e Cargo.lock.
+- Eseguita la repository normalization completa dell'intero pacchetto senza modifiche funzionali al motore clipboard.
+- Rafforzati i controlli release GitHub e la compatibilità del parser Cargo.lock con checkout LF e CRLF su Windows.
+- Rimossa la versione hardcoded dall'interfaccia: il numero di release viene letto direttamente da Tauri.
+
 ## 26.9.2
 
 Automazione della descrizione delle GitHub Release secondo il nuovo standard bilingue `_davstudios`.

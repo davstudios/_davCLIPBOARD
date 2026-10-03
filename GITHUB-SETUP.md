@@ -9,10 +9,10 @@ Formato: `vYY.M.REVISIONE`.
 Per questa release:
 
 ```text
-v26.9.2
+v26.10.1
 ```
 
-La versione tecnica interna non contiene la `v` ed è quindi `26.9.2`. Package JSON, Cargo e Tauri devono riportare sempre lo stesso valore.
+La versione tecnica interna non contiene la `v` ed è quindi `26.10.1`. Package JSON, Cargo e Tauri devono riportare sempre lo stesso valore.
 
 ## Commit da GitHub Desktop
 
@@ -21,7 +21,7 @@ Per ogni release usa questo standard.
 **Summary**
 
 ```text
-_davCLIPBOARD v26.9.2
+_davCLIPBOARD v26.10.1
 ```
 
 **Description**
@@ -41,8 +41,8 @@ Per evitare release incomplete, il workflow interrompe la pubblicazione se la De
 Dopo il commit e il **Push Origin** da GitHub Desktop:
 
 ```bash
-git tag -a v26.9.2 -m "Release _davCLIPBOARD v26.9.2"
-git push origin v26.9.2
+git tag -a v26.10.1 -m "Release _davCLIPBOARD v26.10.1"
+git push origin v26.10.1
 ```
 
 Il workflow verifica che il tag e le versioni interne coincidano, recupera la Description bilingue del commit e crea gli asset Windows, macOS e Linux con una GitHub Release stabile.

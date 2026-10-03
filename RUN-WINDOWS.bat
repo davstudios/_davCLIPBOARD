@@ -1,10 +1,10 @@
 ﻿@echo off
 setlocal
 cd /d "%~dp0"
-title _davCLIPBOARD v26.9.2
+title _davCLIPBOARD v26.10.1
 
 echo ========================================
-echo        _davCLIPBOARD v26.9.2
+echo        _davCLIPBOARD v26.10.1
 echo ========================================
 echo.
 where node >nul 2>nul || goto node_error

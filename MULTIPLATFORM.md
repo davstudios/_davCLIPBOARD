@@ -1,6 +1,6 @@
 # Supporto multipiattaforma
 
-`_davCLIPBOARD v26.9.2` usa Tauri 2 e i plugin ufficiali clipboard manager, global shortcut e autostart.
+`_davCLIPBOARD v26.10.1` usa Tauri 2 e i plugin ufficiali clipboard manager, global shortcut e autostart.
 
 ## Windows
 

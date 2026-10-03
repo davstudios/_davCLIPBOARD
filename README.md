@@ -7,7 +7,7 @@
 Gestore locale della cronologia appunti per Windows, macOS e Linux.  
 Local clipboard history manager for Windows, macOS and Linux.
 
-**v26.9.2 · Stable · Local-first · No telemetry**
+**v26.10.1 · Stable · Local-first · No telemetry**
 
 Interfaccia e motion system condivisi con `_davSPACE` e la suite `_davstudios`.
 
@@ -114,7 +114,7 @@ Always download releases from the official `_davstudios` GitHub repository. When
 - Homepage: https://davstudios.it
 - License: MIT
 - Bundle identifier: `studio.dav.clipboard`
-- Current version: `26.9.2`
+- Current version: `26.10.1`
 
 ## Support _davstudios
 
